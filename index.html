@@ -5,41 +5,109 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Lernantino // Web Developer</title>
-  <link rel="stylesheet" href="./assets/css/style.css" />
+  <title>Louise Elliott // Web Developer</title>
+  <link rel="stylesheet" href="./css/style.css"/>
 </head>
 
 <body>
-  <!-- main logo / nav -->
+
+  <!-- Name, profile photo and navigation links here. The navigation links take the user to the relavant content further down the page, using the nav element to allow users with screen readers to access the menu directly. -->
   <header>
-    <h1>Lernantino</h1>
-    <nav>
-    </nav>
+    <h1>Louise Elliott</h1>
+    <section class="professional-profile-photo"></div>
+    <nav><ul>
+      <li><a href="#about-me">About me</a></li>
+      <li><a href="#my-work">My work</a></li>
+      <li><a href="#get-in-touch">Get in touch</a></li>
+    </ul></nav>
   </header>
 
-  <!-- hero banner -->
+  <!-- Sub-heading to update once qualified -->
   <section class="hero-banner">
     <div>
-      <h2>Cool subtitle here!</h2>
+      <h2>Web developer in the making...!</h2>
     </div>
   </section>
 
+  
+  
   <main class="page-wrapper">
-    <!-- about me -->
+
     <section class="page-section" id="about">
-      <h2>About Me</h2>
+      <h3>About Me</h3>
+      <p>...</p>
+      <!-- I will add here a short summary of where I am at in my web development journey -->
     </section>
 
     <!-- portfolio container -->
+
     <section class="page-section" id="work">
-      <h2>Work</h2>
+      <h3>Work</h3>
+    </section>
+    <p>...</p>
+    <!-- I will add here the titles (with links) and summaries for my apps or for placeholders until I have more -->
+
+    <!-- Three key areas of previous professional experixence outlined here. -->
+    <aside>
+
+      <section="charity">
+          <h4>Not for profit</h4>
+          <img src="./assets/images/lead-generation.png" alt="..."/> <!-- Add photo and more complete alt text -->
+          <p>Experience working for global conservation and health not-for-profit organisations in finance, administration and audit positions</p>
+      </section>
+      
+      <section="education">
+          <h4>Education</h4>
+          <img src="./assets/images/lead-generation.png" alt="..."/> <!-- Add photo and more complete alt text -->
+          <p>Language teaching in the United Kingdown, Spain and Mexico</p>
+      </section>
+  
+      <section="benefit-cost">
+          <h4>Social care</h4>
+          <img src="./assets/images/lead-generation.png" alt="..."/> <!-- Add photo and more complete alt text -->
+          <p>Voluntary roles as a foster carer, mentor and teacher</p>
+      </section>
+
+      <section="benefit-cost">
+        <h4>International work experience</h4>
+        <img src="./assets/images/lead-generation.png" alt="..."/> <!-- Add photo and more complete alt text -->
+        <p>Jobs held in the United Kingdom, Spain and Chile as well as short assignments in Cambodia, Ukraine, Namibia, Ecuador and Peru.</p>
     </section>
 
+  </aside>
+
+
     <!-- contact -->
-    <section class="page-section contact" id="contact">
-      <h2>Contact Me</h2>
+
+    <section id="get-in-touch">
+      <h3 class="text-center">Get in touch</h3>
+      <form>
+        <ul>
+          <li>
+            <label class="text-right" for="name">Name:</label>
+            <input type="text" id="name" name="user-name">
+          </li>
+          <li>
+            <label class="text-right" for="email">Email:</label>
+            <input type="text" id="email" name="user-email">
+          </li>
+          <li>
+            <label class="text-right" for="phone">Phone:</label>
+            <input type="text" id="phone" name="user-phone">
+          </li>
+          <li>
+            <label class="text-right" for="message">Message:</label>
+            <input type="text" id="message" name="user-message">
+          </li>
+        </ul>
+        <div class="text-center">
+          <button type="submit">SEND</button>
+        </div>
+      </form>
     </section>
+
+
   </main>
 </body>
 
-</html>
+</html>    

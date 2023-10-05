@@ -9,15 +9,32 @@ body {
   line-height: 1.5;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  margin: 0;
+h1 {
+  color: pink;
+}
+
+h2 {
+  color: skyblue;
+}
+
+h3 {
+  color: blueviolet
+}
+
+h4 {
+  color:blue;
 }
 
 p {
-  margin: 0;
+  color: navy;
 }
+
+.professional-profile-photo {
+  background: white;
+  height: 230px;
+  background-image: url("../images/professional-profile-photo.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+
