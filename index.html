@@ -1,6 +1,9 @@
 <!DOCTYPE html>
-<html lang="en-gb">
+<html lang="en=gb">
 
+<!-- Semantic elements and alternate text provided for images to aid accessibility. -->
+
+<!-- Key meta data for search engine optimisation. -->
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,10 +14,7 @@
 
 <body>
 
-  <!-- header container -->
-
-  <!-- Name, profile photo and navigation links here. The navigation links take the user to the relavant content further down the page, using the nav element to allow users with screen readers to access the menu directly. -->
-  
+  <!-- Header container with name, profile photo and navigation links that take the user to the relavant content further down the page. -->
   <header>
     <h1>Louise Elliott - Web Developer</h1>
     <nav><ul>
@@ -24,51 +24,59 @@
     </ul></nav>
   </header>
 
-  <!-- profile container -->
-
+  <!-- Profile container with a professional summary and a profile photo. -->
   <section id="about-me">
-    <!-- Sub-heading to update once qualified -->
     <section id="text">
       <h2>About me!</h2>
-      <!-- I will add here a short summary of where I am at in my web development journey -->
-      <p>...</p>
+      <!-- This summary will be updated once more professional experience has been gained. -->
+      <p>I am currently doing the Front End Web Development bootcamp with EdX. My professional background is in the charity sector (conservation and health) in finance, admin and audit roles, and in the education sector, having worked as an English teacher abroad short-term and as a secondary school languages teacher in the UK for six years. I have a first class BSc(Hons) in International Management and Spanish and a PGCE in secondary modern foreign languages teaching. The next step is to apply my skills and expertise in a web development role and it is something about which I am very excited!</p>
     </section>
-    <section class="professional-profile-photo"></section>
-    <!-- Add image description -->
+
+    <section id="photo">
+    <img src="./images/professional-profile-photo.jpeg"; alt="The image shows a photo of Louise Elliott." style="width:500px; height:400px;">
+    </section>
   </section>
 
-   <!-- portfolio container -->
-
+   <!-- Portfolio container with images for, and links to, apps built and refactored so far. -->
   <section id="my-portfolio">
-    <div class="section-heading"><h2>My portfolio</h2></div>
+    <div class="section-heading"><h2>-- My portfolio --</h2></div>
       <div class="app01">
-        <h3>App title 1</h3>
-        <img src="../website-build-portfolio/images/02-portfolio-2.jpg"; alt="Image shows photo of ..." style="width:1000px; height:400px;">
+        <!-- Link opens as new tab. -->
+        <h3><a href="https://louise-elliott-work.github.io/website-refactor-Horiseon/" target="_blank">Horiseon - website refactor</a></h3>
+        <img src="./images/digital-marketing-meeting.jpg"; alt="The image shows a photo of a marketing meeting taking place, with four team members around a table looking at information on paper and on a laptop. " style="width:1000px; height:400px;">        
       </div>
       <div class="app02">
-        <h3>App title 2</h3>
-        <img src="../website-build-portfolio/images/02-portfolio-3.jpg"; alt="Image shows photo of ..." style="width:500px; height:400px;">
+        <!-- Link opens as new tab. -->
+        <h3><a href="https://louise-elliott-work.github.io/prework-study-guide/" target="_blank">Prework study guide - website build</a></h3>
+        <img src="./images/prework-study-guide-screenshot.png"; alt="The image shows a webpage entitled Prework Study Guide, with a logo and some notes underneath." style="width:500px; height:400px;">
       </div>
       <div class="app03">
-        <h3>App title 3</h3>
-        <img src="../website-build-portfolio/images/02-portfolio-4.jpg"; alt="Image shows photo of ..." style="width:500px; height:400px;">
+        <!-- Placeholder link to update once next app has been created. -->
+        <h3><a href="#">Swim Wild app coming soon...</a></h3>
+        <img src="./images/benjamin-elliott-SWQmJ7bO0OI-unsplash.jpg"; alt="The image shows a photo of a man swimming in a river with treelined and mossy banks either side." style="width:500px; height:400px;"> <!-- Photo by Benjamin Elliott on Unsplash. -->
       </div>
-        <!-- I will add here the titles (with links) for my apps or for placeholders until I have more -->
-    
   </section>
 
-    <!-- contact container -->
-
+    <!-- <Contact container with email, GitHub and LinkedIn links. -->
     <section id="contact">
-      <h5>Get in touch!</h5>
+      <h2>Get in touch!</h2>
       <nav><ul>
-        <li><a href="#...@gmail.com">Email</a></li>
-        <li><a href="#LinkedIn">LinkedIn</a></li>
+        <!-- Mail-to opens for users who have email set up on their device, and email address also written out for users who do not. -->
+        <li><a href="mailto:lgework.web@gmail.com">Email: lgework.web@gmail.com</a></li>
+        <!-- Link opens as new tab. -->
+        <li><a href="https://github.com/louise-elliott-work?tab=repositories">GitHub: louise-elliott-work</a></li>
+        <!-- LinkedIn profile to be added at a later date. -->
+        <li><a>LinkedIn: coming soon</a></li>
       </ul></nav>
     </section>
 
+<!-- Personal signature shown here. -->
+<section>
+  <footer>
+      <h4>Made with ❤️️ by me</h4>
+  </footer>
+  </section>
 
-  </main>
 </body>
 
-</html>    
+</html>
