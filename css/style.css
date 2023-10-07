@@ -31,13 +31,19 @@ body {
 
 header {
   background-color: var(--brand-color-3-transparent);
-  border: var(--border-standard);
   border-style: solid;
   border-width: var(--border-standard);
   border-color: var(--brand-color-3);
   border-radius: var(--border-radius-standard);
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+
+li {
+  display: inline-block;
+  list-style-type: none;
+  font-size: 1.5vw;
 }
 
 #about-me {
@@ -75,6 +81,9 @@ header {
 
 .section-heading {
   grid-column: 1 / 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .app01 {
@@ -95,53 +104,9 @@ img {
   background-position: center;
 }
 
-#contact {
-  background-color: var(--brand-color-5-transparent);
-  border: var(--border-standard);
-  border-style: solid;
-  border-width: var(--border-standard);
-  border-color: var(--brand-color-5);
-  border-radius: var(--border-radius-standard);
-}
-
-h1 {
-  color: var(--brand-color-5);
-}
-
-h2 {
-  color: var(--brand-color-2);
-}
-
-h3 {
-  color: var(--brand-color-3);
-}
-
-h4 {
-  color: var(--brand-color-4);
-}
-
-h5 {
-  color: var(--brand-color-5)
-}
-
-a {
-  color: var(--brand-color-1);
-}
-
-li {
-  display: inline-block;
-  list-style-type: none;
-  button: hover;
-}
-
-p {
-  color: var(--brand-color-5);
-}
-
-.professional-profile-photo {
-  height: 180px;
-  width: 242px;
-  background-image: url("../images/professional-profile-photo.jpeg");
+#photo {
+  height: auto;
+  width: auto;
   background-repeat: no-repeat;
   background-size: contain;
   background-position: center;
@@ -150,6 +115,54 @@ p {
   border-width: var(--border-standard);
   border-color: var(--brand-color-4);
   border-radius: var(--border-radius-standard);
+  margin: none;
+}
+
+#contact {
+  background-color: var(--brand-color-5-transparent);
+  border: var(--border-standard);
+  border-style: solid;
+  border-width: var(--border-standard);
+  border-color: var(--brand-color-5);
+  border-radius: var(--border-radius-standard);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+h1 {
+  color: var(--brand-color-1);
+  font-size: 3vw;
+}
+
+h2 {
+  color: var(--brand-color-5);
+  font-size: 2vw;
+}
+
+h3 {
+  color: var(--brand-color-3);
+  font-size: 1.5vw;
+}
+
+h4 {
+  color: var(--brand-color-4);
+}
+
+a {
+  color: var(--brand-color-1);
+  text-decoration: none;
+}
+
+p {
+  color: var(--brand-color-5);
+  font-size: 1.2vw;
 }
 
 [href$".gmail.com"]//before {
