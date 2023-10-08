@@ -1,3 +1,5 @@
+/* Brand colors and style set here, to facilitate future brand design changes. */
+
 :root {
   --brand-color-1: #C95789;
   --brand-color-1-transparent: #c9578825;
@@ -23,16 +25,21 @@
   font-family: var(--brand-font-family)
 }
 
+/* Brand colors used for all font, boxes and borders. */
+/* Font sizes throughout set to respond to viewport width. */
+
 body {
   line-height: 1.5;
   display: flex;
   flex-direction: column;
 }
 
+/* Header bar with name and role on the left and navigation menu on the right. */
+
 header {
   background-color: var(--brand-color-3-transparent);
   border-style: solid;
-  border-width: var(--border-standard);
+  border-width: var(--border-width-standard);
   border-color: var(--brand-color-3);
   border-radius: var(--border-radius-standard);
   display: flex;
@@ -46,37 +53,37 @@ li {
   font-size: 1.5vw;
 }
 
-#about-me {
+/* About me section clearly defined with title, summary and photo occupying 20% and responding to viewport width. */
+
+.about-me {
   background-color: var(--brand-color-2-transparent);
-  border: var(--border-standard);
   border-style: solid;
-  border-width: var(--border-standard);
+  border-width: var(--border-width-standard);
   border-color: var(--brand-color-2);
   border-radius: var(--border-radius-standard);
-  display: flex;
-  justify-content: space-between;
+  margin: var(--margin-standard);
 }
 
-#text {
-  border: var(--border-standard);
-  border-style: none;
+#profile-information {
   display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
 }
+
+.profile-photo {
+  width: 20%;
+}
+
+/* Portfolio section clearly defined with title and labelled apps below that can be clicked on to open in a new tab. */
 
 #my-portfolio {
   background-color: var(--brand-color-4-transparent);
-  border: var(--border-standard);
   border-style: solid;
-  border-width: var(--border-standard);
+  border-width: var(--border-width-standard);
   border-color: var(--brand-color-4);
   border-radius: var(--border-radius-standard);
   display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: auto;
     justify-content: center;
-    align-content: start;
+    align-items: start;
 }
 
 .section-heading {
@@ -86,49 +93,48 @@ li {
   justify-content: center;
 }
 
+/* The most recent app occupies the entire first row of the grid to appear more prominently. */
+
 .app01 {
   grid-column: 1 / 5;
 }
 
+/* The second and third apps shre the space on the second row. */
+
 .app02 {
-  grid-column: 1 / 3;
+  grid-column: 1 / 2;
 }
 
 .app03 {
-  grid-column: 3 / 5;
+  grid-column: 2 / 5;
 }
 
 img {
-  border-radius: var(--border-radius-standard);
+  max-width: auto;
+  height: auto;
   background-size: cover;
   background-position: center;
-}
-
-#photo {
-  height: auto;
-  width: auto;
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center;
-  border: var(--border-standard);
+  margin: var(--margin-standard);
   border-style: solid;
-  border-width: var(--border-standard);
+  border-width: var(--border-width-standard);
   border-color: var(--brand-color-4);
   border-radius: var(--border-radius-standard);
-  margin: none;
 }
+
+/* Contact section clearly defined with 'Get in touch' instruction, email address, GitHub link and LinkedIn link, all clickable. */
 
 #contact {
   background-color: var(--brand-color-5-transparent);
-  border: var(--border-standard);
   border-style: solid;
-  border-width: var(--border-standard);
+  border-width: var(--border-width-standard);
   border-color: var(--brand-color-5);
   border-radius: var(--border-radius-standard);
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
+/* Signature displayed bottom right. */
 
 footer {
   display: flex;
@@ -162,15 +168,10 @@ a {
 
 p {
   color: var(--brand-color-5);
-  font-size: 1.2vw;
+  font-size: 1.4vw;
 }
 
-[href$".gmail.com"]//before {
-  content: ;
-  display: inline-block;
-  margin: right 3px;
-}
-
+/* Media queries set to support users with various viewport widths. */
 
 @media only screen and (max-width: 1000px) {
   ...
