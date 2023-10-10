@@ -26,8 +26,8 @@
 
   <!-- Profile container with a professional summary and a profile photo. -->
   <section id="about-me">
-    <div id="text">
-    <h2>About me!</h2>
+    <div id="profile-text">
+      <div id="profile-heading"><h2>About me!</h2></div>
     <!-- This summary will be updated once more professional experience has been gained. -->
     <p>I am currently doing the Front End Web Development bootcamp with EdX. My professional background is in the charity sector (conservation and health) in finance, admin and audit roles, and in the education sector, having worked as an English teacher abroad short-term and as a secondary school languages teacher in the UK for six years. I have a first class BSc (Hons) in International Management and Spanish and a PGCE in secondary modern foreign languages teaching. The next step is to apply my skills and expertise in a web development role and it is something about which I am very excited!</p>
     </div>
@@ -39,27 +39,33 @@
   <!-- Portfolio container with images for, and links to, apps built and refactored so far. -->
   <section id="my-portfolio">
     
-    <div id="section-heading"><h2>-- My portfolio --</h2></div>
-      
-      <div id="app01">
-        <!-- Link opens as new tab. -->
-        <div class="app-label"><h3><a href="https://louise-elliott-work.github.io/website-refactor-Horiseon/" target="_blank">Horiseon - website refactor</a></h3></div>
-        <div class="app-image"><img src="./images/digital-marketing-meeting.jpg"; alt="The image shows a photo of a marketing meeting taking place, with four team members around a table looking at information on paper and on a laptop."></div>
-      </div>
-
-      <div id="app02">
-        <!-- Link opens as new tab. -->
-        <div class="app-label"><h3><a href="https://louise-elliott-work.github.io/prework-study-guide/" target="_blank">Prework study guide - website build</a></h3></div>
-        <div class="app-image"><img src="./images/prework-study-guide-screenshot-resized.png"; alt="The image shows a screenshot of a webpage entitled Prework Study Guide, with a logo and some notes underneath."></div>
-      </div>
+    <div id="portfolio-heading"><h2>-- My portfolio --</h2></div>
     
-      <div id="app03">
-        <!-- Placeholder link to update once next app has been created. -->
-        <div class="app-label"><h3><a href="#">Swim Wild app coming soon...</a></h3></div>
-        <div class="app-image"><img src="./images/benjamin-elliott-SWQmJ7bO0OI-unsplash-resized.jpg"; alt="The image shows a photo of a man swimming in a river with treelined and mossy banks either side."></div> <!-- Photo by Benjamin Elliott on Unsplash. -->
-      </div>
+    <div id="app01">
+      <!-- Link opens as new tab when label or image is clicked. -->
+      <a href="https://louise-elliott-work.github.io/website-refactor-Horiseon/" target="_blank">
+      <div id="app-label"><h3>Horiseon - website refactor</h3></div>
+      <div class="app-image"><img src="./images/digital-marketing-meeting.jpg"; alt="The image shows a photo of a marketing meeting taking place, with four team members around a table looking at information on paper and on a laptop."></div>
+    </div>
+    </a>
 
-  </section>
+    <div id="app02">
+      <!-- Link opens as new tab when label or image is clicked. -->
+      <a href="https://louise-elliott-work.github.io/prework-study-guide/" target="_blank">
+      <div id="app-label"><h3>Study guide - website build</h3></div>
+      <div class="app-image"><img src="./images/prework-study-guide-screenshot-resized.png"; alt="The image shows a screenshot of a webpage entitled Prework Study Guide, with a logo and some notes underneath."></div>
+    </div>
+    </a>
+    
+    <div id="app03">
+      <!-- Placeholder link to update once next app has been created. -->
+      <a href="#">
+      <div id="app-label"><h3>Swim Wild app (coming soon...)</h3></div>
+      <div class="app-image"><img src="./images/benjamin-elliott-SWQmJ7bO0OI-unsplash-resized.jpg"; alt="The image shows a photo of a man swimming in a river with treelined and mossy banks either side."></div> <!-- Photo by Benjamin Elliott on Unsplash. -->
+      </div> 
+     </a>   
+  
+    </section>
 
     <!-- <Contact container with email, GitHub and LinkedIn links. -->
     <section id="contact">

@@ -66,7 +66,7 @@ li {
   grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-#text {
+#profile-text {
   border-style: none;
   grid-column: 1 / 4;
 }
@@ -89,8 +89,9 @@ li {
   grid-template-columns: 1fr 1fr;
 }
 
-#section-heading {
+#portfolio-heading {
   grid-column: 1 / 3;
+  grid-row: 1 / 1;
   display: flex;
   justify-content: center;
   }
@@ -99,16 +100,22 @@ li {
 
 #app01 {
   grid-column: 1 / 3;
+  grid-row: 2 / 2;
+  position: relative;
 }
 
 /* The second and third apps share the space on the second row. */
 
 #app02 {
   grid-column: 1 / 2;
+  grid-row: 3 / 3;
+  position: relative;
 }
 
 #app03 {
   grid-column: 2 / 3;
+  grid-row: 3 / 3;
+  position: relative;
 }
 
 img {
@@ -121,12 +128,15 @@ img {
 }
 
 #app-label {
-  background-color: var(--brand-color-3);
+  background-color: var(--brand-color-4);
   margin: var(--margin-standard);
   border-style: solid;
   border-width: var(--border-width-standard);
   border-color: var(--brand-color-1);
   border-radius: var(--border-radius-standard);
+  position: absolute;
+  top: 1vw;
+  left: 1vw;
 }
 
 .app-image {
@@ -147,16 +157,6 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.my-apps{
-  display:flex;
-  flex-wrap: wrap;
-}
-#app01{
-  flex: 1 0 95%;
-}
-.app-div{
-  flex: 1 0 45%;
 }
 
 /* Signature displayed bottom right. */
@@ -199,10 +199,107 @@ p {
 
 /* Media queries set to support users with various viewport widths. */
 
-@media only screen and (max-width: 1000px) {
-  ...
-}
-
 @media only screen and (max-width: 600px) {
-  ...
+  
+  /* Header bar with name and role on one line and navigation menu on a separate line, all centered. */
+  
+  header {
+    background-color: var(--brand-color-3-transparent);
+    border-style: solid;
+    border-width: var(--border-width-standard);
+    border-color: var(--brand-color-3);
+    border-radius: var(--border-radius-standard);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* About me section with title, summary and photo on separate lines, all centered. */
+
+  #about-me {
+    background-color: var(--brand-color-2-transparent);
+    border-style: solid;
+    border-width: var(--border-width-standard);
+    border-color: var(--brand-color-2);
+    border-radius: var(--border-radius-standard);
+    margin: var(--margin-standard);
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+
+  #profile-heading {
+    grid-column: 1 / 4;
+    grid-row: 1 / 1;
+    display: flex;
+    justify-content: center;
+    }
+
+  #text {
+    border-style: none;
+    grid-column: 1 / 4;
+    grid-row: 2 / 2;
+  }
+  
+  #profile-photo {
+    grid-column: 2 / 3;
+    grid-row: 3 / 3;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+  }
+
+  /* Contact section with 'Get in touch' instruction, email address, GitHub link and LinkedIn link, on separate lines, all centered. */
+  
+  #contact {
+    background-color: var(--brand-color-5-transparent);
+    border-style: solid;
+    border-width: var(--border-width-standard);
+    border-color: var(--brand-color-5);
+    border-radius: var(--border-radius-standard);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  /* Font sizes adjusted for smaller screen size to avoid need for pinching. */
+
+  header li {
+    font-size: 2.5vw;
+  }
+  
+  h1 {
+    font-size: 5vw;
+  }
+  
+  h2 {
+    font-size: 3.5vw;
+  }
+  
+  h3 {
+    font-size: 2vw;
+  }
+  
+  h4 {
+    font-size: 2vw;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  p {
+    font-size: 2vw;
+  }
+
+  /* Contact details displayed vertically to facilitate use. */
+
+  #contact li {
+    font-size: 2vw;
+    display: flex;
+    justify-content: center;
+  }
+
 }
