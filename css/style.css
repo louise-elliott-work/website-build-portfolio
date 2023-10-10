@@ -11,10 +11,10 @@
   --brand-color-4-transparent: #00b1ba2a;
   --brand-color-5: #0065A2;
   --brand-color-5-transparent: #0064a228;
-  --padding-standard: 0;
+  --padding-standard: 0px 0px 0px 0px;
   --border-width-standard: 2px;
   --border-radius-standard: 15px;
-  --margin-standard: 10px;
+  --margin-standard: 10px 10px 10px 10px;
   --brand-font-family: Tahoma, Verdana, sans-serif;
 }
 
@@ -55,21 +55,26 @@ li {
 
 /* About me section clearly defined with title, summary and photo occupying 20% and responding to viewport width. */
 
-.about-me {
+#about-me {
   background-color: var(--brand-color-2-transparent);
   border-style: solid;
   border-width: var(--border-width-standard);
   border-color: var(--brand-color-2);
   border-radius: var(--border-radius-standard);
   margin: var(--margin-standard);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 
-#profile-information {
+#text {
+  border-style: none;
+  grid-column: 1 / 4;
+}
+
+#profile-photo {
+  grid-column: 4 / 5;
   display: flex;
-}
-
-.profile-photo {
-  width: 20%;
+  justify-content: flex-end;
 }
 
 /* Portfolio section clearly defined with title and labelled apps below that can be clicked on to open in a new tab. */
@@ -81,44 +86,54 @@ li {
   border-color: var(--brand-color-4);
   border-radius: var(--border-radius-standard);
   display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: center;
-    align-items: start;
+  grid-template-columns: 1fr 1fr;
 }
 
-.section-heading {
-  grid-column: 1 / 5;
+#section-heading {
+  grid-column: 1 / 3;
   display: flex;
-  align-items: center;
   justify-content: center;
-}
+  }
 
 /* The most recent app occupies the entire first row of the grid to appear more prominently. */
 
-.app01 {
-  grid-column: 1 / 5;
+#app01 {
+  grid-column: 1 / 3;
 }
 
-/* The second and third apps shre the space on the second row. */
+/* The second and third apps share the space on the second row. */
 
-.app02 {
+#app02 {
   grid-column: 1 / 2;
 }
 
-.app03 {
-  grid-column: 2 / 5;
+#app03 {
+  grid-column: 2 / 3;
 }
 
 img {
-  max-width: auto;
-  height: auto;
-  background-size: cover;
-  background-position: center;
-  margin: var(--margin-standard);
   border-style: solid;
   border-width: var(--border-width-standard);
   border-color: var(--brand-color-4);
   border-radius: var(--border-radius-standard);
+  max-width: 100%;
+  height: auto;
+}
+
+#app-label {
+  background-color: var(--brand-color-3);
+  margin: var(--margin-standard);
+  border-style: solid;
+  border-width: var(--border-width-standard);
+  border-color: var(--brand-color-1);
+  border-radius: var(--border-radius-standard);
+}
+
+.app-image {
+  max-width: 100%;
+  max-height: auto;
+  display: flex;
+  justify-content: center;
 }
 
 /* Contact section clearly defined with 'Get in touch' instruction, email address, GitHub link and LinkedIn link, all clickable. */
@@ -132,6 +147,16 @@ img {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+.my-apps{
+  display:flex;
+  flex-wrap: wrap;
+}
+#app01{
+  flex: 1 0 95%;
+}
+.app-div{
+  flex: 1 0 45%;
 }
 
 /* Signature displayed bottom right. */
@@ -159,6 +184,7 @@ h3 {
 
 h4 {
   color: var(--brand-color-4);
+  font-size: 1.2vw;
 }
 
 a {
