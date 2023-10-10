@@ -25,8 +25,8 @@
   font-family: var(--brand-font-family)
 }
 
-/* Brand colors used for all font, boxes and borders. */
-/* Font sizes throughout set to respond to viewport width. */
+/* Brand colors used for all font, boxes and borders for consistency. */
+/* Font and image sizes throughout set to respond to viewport width to support use with different devices. */
 
 body {
   line-height: 1.5;
