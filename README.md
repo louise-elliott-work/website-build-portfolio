@@ -26,8 +26,7 @@ The webpage has a header with a title and navigation menu of three items at the 
 
 ![Website screenshot 550px](images/screenshot_550px.png)
 ![Website screenshot 1000px](images/screenshot_1000px.png)
-
-Website link: https://github.com/louise-elliott-work/website-build-portfolio
+![Website link](https://louise-elliott-work.github.io/website-build-portfolio/)
 
 ## License
 
